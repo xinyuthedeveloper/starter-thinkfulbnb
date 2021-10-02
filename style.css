@@ -22,8 +22,6 @@ p {
 }
 
 section {
-  display: flex;
-  flex-direction: column;
   padding: 20px;
 }
 
@@ -45,7 +43,7 @@ main img {
 
 .item {
   flex: 1;
-  margin: 10px;
+  margin:10px;
 }
 
 .item-double {
@@ -56,13 +54,13 @@ main img {
 
 header {
   background-color: #ff385c;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 20px 20px;
   text-align: center;
 }
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 50px;
   color: #fff;
 }
 
@@ -81,6 +79,10 @@ header nav ul li a {
   padding: 0 20px 0 0;
 }
 
+header nav ul li:last-child a {
+  margin-right: 20px;
+}
+
 header nav ul li a:hover {
   color: #bdbdbd;
   text-decoration: none;
@@ -88,6 +90,9 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 2px solid #ff385c;
   padding: 10px;
 }
@@ -99,7 +104,8 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  width: 65%;
+  float: right;
 }
 
 form button {
@@ -125,29 +131,31 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 600px) {
   header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+  }
+
+  header nav {
+    padding: 10px;
   }
 
   form {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .group {
     flex-direction: row;
   }
 
-  .full-images {
-    display: flex;
-    flex: 1;
-  }
-
-  .set-of-two-images {
+  form div {
     display: flex;
     flex-direction: column;
-    flex: 1;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: row nowrap;
+    align-items: center;
   }
 }
