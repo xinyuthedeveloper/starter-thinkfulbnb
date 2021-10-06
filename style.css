@@ -138,6 +138,23 @@ footer p {
     justify-content: space-between;
   }
 
+  .logo{
+    font-size: 36px;
+  }
+
+  #ideas .group {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   header nav {
     padding: 10px;
   }
