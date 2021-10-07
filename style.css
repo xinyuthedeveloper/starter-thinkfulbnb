@@ -136,6 +136,7 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   .logo{
@@ -153,6 +154,7 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   header nav {
